@@ -7,6 +7,7 @@ public class Director {
 		builder.buildHead();
 		builder.buildBody();
 		builder.buildLegs();
+		builder.buildBoots();
 	}
 	
 }

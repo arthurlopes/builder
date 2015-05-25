@@ -19,8 +19,14 @@ public class SoldierBuilder implements CharacterBuilderInterface{
 		character.append(CreateCharacterApp.getFileContent(CreateCharacterApp.root_dir + "soldier/legs.txt"));
 	}
 	
+	@Override
 	public void buildAcessorie() {
 		character.append(CreateCharacterApp.getFileContent(CreateCharacterApp.root_dir + "soldier/acessorie.txt"));
+	}
+	
+	@Override
+	public void buildBoots() {
+		character.append(CreateCharacterApp.getFileContent(CreateCharacterApp.root_dir + "soldier/boots.txt"));
 	}
 	
 	public StringBuilder getResult() {

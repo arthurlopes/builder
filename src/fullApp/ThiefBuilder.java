@@ -27,4 +27,9 @@ public class ThiefBuilder implements CharacterBuilderInterface {
 	public StringBuilder getResult() {
 		return character;
 	}
+
+	@Override
+	public void buildBoots() {
+		character.append(CreateCharacterApp.getFileContent(CreateCharacterApp.root_dir + "thief/boots.txt"));
+	}
 }

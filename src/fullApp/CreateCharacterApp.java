@@ -58,6 +58,11 @@ public static final String root_dir = "bin/textFiles/";
 			dir.Construct(thiefBuilder);
 			System.out.println(thiefBuilder.getResult());
 			break;
+		case "pikachu":
+			PikachuBuilder pikachuBuilder = new PikachuBuilder();
+			dir.Construct(pikachuBuilder);
+			System.out.println(pikachuBuilder.getResult());
+			break;
 		default:
 			System.out.print("Tipo de personagem no soportado, por favor tente de novo");
 			System.exit(1);

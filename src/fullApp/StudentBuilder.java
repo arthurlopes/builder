@@ -27,4 +27,9 @@ public class StudentBuilder implements CharacterBuilderInterface {
 	public StringBuilder getResult() {
 		return character;
 	}
+
+	@Override
+	public void buildBoots() {
+		character.append(CreateCharacterApp.getFileContent(CreateCharacterApp.root_dir + "student/boots.txt"));
+	}
 }
