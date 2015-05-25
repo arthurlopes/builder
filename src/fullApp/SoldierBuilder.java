@@ -19,6 +19,10 @@ public class SoldierBuilder implements CharacterBuilderInterface{
 		character.append(CreateCharacterApp.getFileContent(CreateCharacterApp.root_dir + "soldier/legs.txt"));
 	}
 	
+	public void buildAcessorie() {
+		character.append(CreateCharacterApp.getFileContent(CreateCharacterApp.root_dir + "soldier/acessorie.txt"));
+	}
+	
 	public StringBuilder getResult() {
 		return character;
 	}
