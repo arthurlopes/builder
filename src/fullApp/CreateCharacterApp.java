@@ -1,3 +1,9 @@
+/**
+ * 
+ * @author Arthur Costa Lopes e Eric Krakauer
+ * RA: 157999 e 155253
+ */
+
 package fullApp;
 
 import java.io.BufferedReader;
@@ -42,6 +48,8 @@ public static final String root_dir = "bin/textFiles/";
 		
 		Director dir = new Director();
 		
+		/*Determina o personagem a ser criado e manda ao diretor*
+		 * para construi-lo */
 		switch(tipo.toLowerCase()) {
 		case "soldier":
 			SoldierBuilder soldierBuilder = new SoldierBuilder();
